@@ -38,11 +38,13 @@ randomWord(); // calling the function and start the game
 // function to handle user input and check guesses
 function initGame(e) {
   let key = e.target.value.toLowerCase();
+  // checking if the input is a letter, not guessed before, and not incorrect
   if (
     key.match(/^[A-Za-z]+$/) &&
     !incorrectLetters.includes(` ${key}`) &&
     !correctLetters.includes(key)
   ) {
+     // if the letter is in the word, update correctLetters array and display it
     if (word.includes(key)) {
       for (let i = 0; i < word.length; i++) {
         if (word[i] == key) {
@@ -54,11 +56,14 @@ function initGame(e) {
       maxGuesses--;
       incorrectLetters.push(` ${key}`);
     }
+    // update remaining guesses and display incorrect letters
     guessLeft.innerText = maxGuesses;
     wrongLetter.innerText = incorrectLetters;
   }
+  // clear input
   typingInput.value = "";
 
+  // checking for game end conditions after a short delay
   setTimeout(() => {
     if (correctLetters.length === word.length) {
       Swal.fire(`You are a genius!. The word is: ${word.toUpperCase()}`);
