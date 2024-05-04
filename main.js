@@ -1,3 +1,5 @@
+//selecting necessary elements from the DOM
+
 const inputs = document.querySelector(".inputs"),
   hintTag = document.querySelector(".hint span"),
   guessLeft = document.querySelector(".guess-left span"),
@@ -5,29 +7,35 @@ const inputs = document.querySelector(".inputs"),
   resetBtn = document.querySelector(".reset-btn"),
   typingInput = document.querySelector(".typing-input");
 
+
+// creat empty arrays and the necessary information has been called in the word.js
 let word,
   maxGuesses,
   incorrectLetters = [],
   correctLetters = [];
 
+  //function to select a random word and initialize the game
 function randomWord() {
   let ranItem = wordList[Math.floor(Math.random() * wordList.length)];
   word = ranItem.word;
   maxGuesses = word.length >= 6 ? 5 : 3;
   correctLetters = [];
   incorrectLetters = [];
+  // displaying hint, remaining guesses, and clearing previous inputs
   hintTag.innerText = ranItem.hint;
   guessLeft.innerText = maxGuesses;
   wrongLetter.innerText = incorrectLetters;
 
+  // generating input elements for each letter of the word
   let html = "";
   for (let i = 0; i < word.length; i++) {
     html += `<input type="text" disabled>`;
     inputs.innerHTML = html;
   }
 }
-randomWord();
+randomWord(); // calling the function and start the game
 
+// function to handle user input and check guesses
 function initGame(e) {
   let key = e.target.value.toLowerCase();
   if (
