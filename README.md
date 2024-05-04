@@ -9,4 +9,9 @@
 6. If the letter is incorrect, it will be added to the list of incorrect guesses.
 7. Keep guessing letters until you either complete the word or run out of guesses.
 8. If you complete the word within the allowed number of guesses, you win the game.
-9. 
+
+## 👻Features 
+- Randomly selects word from a predefined list.
+- Provides a hint for each word to assist the player.
+- Limits the number of guesses based on the length of the word.
+- Displays incorrect guesses.
