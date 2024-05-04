@@ -18,3 +18,11 @@
 - Notifies the player when they win or lose the game.
 - Allows the player to reset the game and start over.
 ## 🛠️Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+
+
+## 👽Contributions
+- Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
