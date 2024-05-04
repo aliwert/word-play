@@ -53,10 +53,10 @@ function initGame(e) {
 
   setTimeout(() => {
     if (correctLetters.length === word.length) {
-      Swal.fire(`Congrats! You found the word. The word is: ${word.toUpperCase()}`);
+      Swal.fire(`You are a genius!. The word is: ${word.toUpperCase()}`);
       return randomWord();
     } else if (maxGuesses < 1) {
-      Swal.fire("Game over! You don't have remaining guesses");
+      Swal.fire("Game over! Loserrr😎");
       for (let i = 0; i < word.length; i++) {
         inputs.querySelectorAll("input")[i].value = word[i];
       }
