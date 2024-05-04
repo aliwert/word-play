@@ -1,0 +1,2 @@
+# Word Play Game 👾
+- Word Play is a word guessing game implemented using HTML, CSS, and JavaScript. The game randomly selects a word from a predefined list and provides a hint for that word. The player's objective is to guess the word by inputting one letter at a time. The player has a limited number of guesses, and incorrect guesses are displayed. If the player correctly guesses all the letters in the word within the allowed number of guesses, they win the game. Otherwise, if the player runs out of guesses, they lose.
