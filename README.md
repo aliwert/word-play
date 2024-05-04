@@ -15,3 +15,5 @@
 - Provides a hint for each word to assist the player.
 - Limits the number of guesses based on the length of the word.
 - Displays incorrect guesses.
+- Notifies the player when they win or lose the game.
+- Allows the player to reset the game and start over.
