@@ -18,6 +18,7 @@
 - Notifies the player when they win or lose the game.
 - Allows the player to reset the game and start over.
 ## 🛠️Technologies Used
+- SweetAlert2
 - HTML
 - CSS
 - JavaScript
