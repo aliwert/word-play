@@ -171,5 +171,64 @@ let wordList = [
     word: "butterfly",
     hint: "Insect with large, often brightly colored wings",
   },
-  
+  {
+    word: "python",
+    hint: "A versatile programming language known for its readability.",
+  },
+  {
+    word: "javascript",
+    hint: "A high-level, interpreted scripting language primarily used for web development.",
+  },
+  {
+    word: "java",
+    hint: "A widely-used object-oriented programming language known for its platform independence.",
+  },
+  {
+    word: "csharp",
+    hint: "A multi-paradigm programming language developed by Microsoft as part of its .NET initiative.",
+  },
+  {
+    word: "ruby",
+    hint: "A dynamic, reflective, object-oriented programming language known for its simplicity and productivity.",
+  },
+  {
+    word: "go",
+    hint: "A statically typed, compiled programming language designed for simplicity and efficiency.",
+  },
+  {
+    word: "swift",
+    hint: "A powerful and intuitive programming language created by Apple for iOS, macOS, watchOS, and tvOS development.",
+  },
+  {
+    word: "typescript",
+    hint: "A strongly-typed superset of JavaScript that compiles to plain JavaScript.",
+  },
+  {
+    word: "rust",
+    hint: "A systems programming language focused on safety, speed, and concurrency.",
+  },
+  {
+    word: "php",
+    hint: "A server-side scripting language designed for web development but also used as a general-purpose programming language.",
+  },
+  {
+    word: "html",
+    hint: "A markup language used for creating and structuring web pages.",
+  },
+  {
+    word: "css",
+    hint: "A style sheet language used for describing the presentation of a document written in HTML.",
+  },
+  {
+    word: "sql",
+    hint: "A domain-specific language used in programming and designed for managing data held in a relational database management system.",
+  },
+  {
+    word: "assembly",
+    hint: "A low-level programming language used for programming computer hardware.",
+  },
+  {
+    word: "perl",
+    hint: "A high-level, general-purpose programming language known for its powerful text processing features.",
+  },
 ];
