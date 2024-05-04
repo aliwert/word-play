@@ -13,7 +13,7 @@ let word,
 function randomWord() {
   let ranItem = wordList[Math.floor(Math.random() * wordList.length)];
   word = ranItem.word;
-  maxGuesses = word.length >= 5 ? 8 : 6;
+  maxGuesses = word.length >= 6 ? 5 : 3;
   correctLetters = [];
   incorrectLetters = [];
   hintTag.innerText = ranItem.hint;
